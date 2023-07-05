@@ -18,7 +18,7 @@ const Pagination: React.FC<PaginationProps> = ({
   return (
     <PaginationContainer>
       {authors?.length &&
-        [...Array(Math.ceil(authors.length / 5))].map((e, i) => (
+        [...Array(Math.ceil(authors.length / 5))].map((_, i) => (
           <PaginationButton
             key={i}
             onClick={() => setCurrent(i)}
